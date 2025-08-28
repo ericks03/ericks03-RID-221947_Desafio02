@@ -1,0 +1,722 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  background-color: #02A28F;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+h2 {
+  background-color: #02A28F;
+  color: #FFFFFF;
+  border-radius: 1rem;
+  max-width: 100%;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  box-shadow: .3rem .3rem .3rem .3rem #f0f0f0;
+}
+
+
+.text>h3 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 0.8rem;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #02A28F;
+  color: #FFFFFF;
+  max-width: 96%;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  box-shadow: .3rem .3rem .3rem .3rem #f0f0f0;
+}
+
+.title>h2 {
+
+  font-weight: bold;
+  box-shadow: none;
+}
+
+.title>a {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  padding-right: 1.5rem;
+}
+
+
+#container-principal {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3.125rem;
+}
+
+#imagemPrincipal {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+
+#section-Cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 1rem;
+}
+
+.card {
+  width: 22.5rem;
+  min-height: 24rem;
+  margin-top: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: .3rem .3rem .3rem .3rem #f0f0f0;
+
+}
+
+.paragraphs-cards {
+  color: #02A28F;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+.author {
+  color: #616161;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.lorem {
+  font-size: 0.875rem;
+}
+
+.date {
+  color: #616161;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.text {
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* ou flex-start */
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+}
+
+
+.sidebar {
+  margin-top: 0.6rem;
+}
+
+.post {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 0 0 0.5rem;
+  margin: 1.1rem 0;
+  width: 22.5rem;
+  height: 6rem;
+  border-radius: 1rem;
+  box-shadow: .3rem .3rem .3rem .3rem #f0f0f0;
+}
+
+.post-info>time {
+  font-size: 0.75rem;
+  color: #616161;
+  font-weight: 500;
+}
+
+.categorias {
+  margin-top: 2.5rem;
+}
+
+
+.listCategories {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.listCategories ul {
+  list-style: none;
+  margin: 0.5rem;
+}
+
+.lists {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #616161;
+  text-align: justify;
+}
+
+footer {
+  margin-top: 4.5rem;
+  background: #02A28F;
+  text-align: center;
+}
+
+footer>p {
+  color: #FFFFFF;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+
+/* 🔹 Mobile first (até 320px) */
+@media (max-width: 320px) {
+  #container-principal {
+    flex-direction: column;
+    /* Sidebar fica embaixo */
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  #container-principal>img {
+    max-width: 100%;
+  }
+
+  #imagemCards {
+    max-width: 100%;
+  }
+
+  #section-Cards {
+    grid-template-columns: 1fr;
+    /* Apenas 1 card por linha */
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .card {
+    justify-content: center;
+    width: 100%;
+    /* Preenche a tela */
+    margin-bottom: 1rem;
+  }
+
+  .post {
+    justify-content: center;
+    padding: 1rem;
+    width: auto;
+    /* Preenche a tela */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    height: auto;
+    text-align: center;
+
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0.5rem;
+
+  }
+
+  .author,
+  .lorem,
+  .date,
+  b {
+    font-size: 0.8rem;
+  }
+
+  .listCategories {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lists {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+/* 🔹 Responsivo para telas até 480px */
+@media (max-width: 480px) {
+  #container-principal {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  #imagemCards {
+    max-width: 100%;
+  }
+
+  #section-Cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .post {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+
+  .title a {
+    padding: 0;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .text {
+    padding: 0.5rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .listCategories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lists {
+    font-size: 1rem;
+  }
+
+  footer>p {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+}
+
+/* 🔹 Responsivo para telas até 768px */
+@media (max-width: 768px) {
+  #container-principal {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  #section-Cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .post {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h3,
+  .text>h3 {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+
+  .title a {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+
+  .text {
+    padding: 0.5rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .listCategories {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .listCategories ul {
+    margin: 0.5rem 0;
+  }
+
+  .lists {
+    font-size: 1rem;
+  }
+
+  footer>p {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #container-principal {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 1rem;
+  }
+
+  #section-Cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .post {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .title {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .title a {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  .text {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h3,
+  .text>h3 {
+    font-size: 1.2rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 2rem;
+  }
+
+  .listCategories {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .lists {
+    font-size: 1rem;
+  }
+
+  footer>p {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+
+/* 🔹 Responsivo para telas grandes como 2560px */
+@media (min-width: 1921px) {
+  body {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  #container-principal {
+    max-width: 1600px;
+    margin: 4rem auto;
+    gap: 2rem;
+  }
+
+  #section-Cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .post {
+    width: 100%;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+
+  .title {
+    max-width: 1600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    font-size: 1.75rem;
+  }
+
+  .title h2 {
+    font-size: 2rem;
+  }
+
+  .title a {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3,
+  .text>h3 {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    padding: 1rem;
+  }
+
+  .paragraphs-cards {
+    font-size: 1rem;
+  }
+
+  .author,
+  .date {
+    font-size: 1rem;
+  }
+
+  .lorem {
+    font-size: 1.125rem;
+  }
+
+  .sidebar {
+    max-width: 1600px;
+    margin: 2rem auto;
+  }
+
+  .listCategories {
+    padding: 1rem 2rem;
+  }
+
+  .lists {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  footer>p {
+    font-size: 1rem;
+    padding: 1.5rem 0;
+  }
+}
+
+/* 🔹 Responsivo para telas grandes como 2560px */
+@media (min-width: 1921px) {
+  body {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  #container-principal {
+    max-width: 1600px;
+    margin: 4rem auto;
+    gap: 2rem;
+  }
+
+  #section-Cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .post {
+    width: 100%;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+
+  .title {
+    max-width: 1600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    font-size: 1.75rem;
+  }
+
+  .title h2 {
+    font-size: 2rem;
+  }
+
+  .title a {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3,
+  .text>h3 {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    padding: 1rem;
+  }
+
+  .paragraphs-cards {
+    font-size: 1rem;
+  }
+
+  .author,
+  .date {
+    font-size: 1rem;
+  }
+
+  .lorem {
+    font-size: 1.125rem;
+  }
+
+  .sidebar {
+    max-width: 1600px;
+    margin: 2rem auto;
+  }
+
+  .listCategories {
+    padding: 1rem 2rem;
+  }
+
+  .lists {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  footer>p {
+    font-size: 1rem;
+    padding: 1.5rem 0;
+  }
+}
